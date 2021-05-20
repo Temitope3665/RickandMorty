@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RickandMorty</string>
+    <string name="name">Name:</string>
+    <string name="rick">Rick</string>
+    <string name="status">Status:</string>
+    <string name="specie">Specie:</string>
+</resources>
