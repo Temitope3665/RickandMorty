@@ -2,7 +2,7 @@ package com.temicode.rickandmorty.api
 
 import com.squareup.moshi.Json
 
-class Morty(
+data class Morty(
 
     @Json(name = "name")
     val mortyName: String,

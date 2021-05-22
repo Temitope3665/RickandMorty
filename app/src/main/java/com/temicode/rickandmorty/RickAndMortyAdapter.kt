@@ -33,6 +33,5 @@ class RickAndMortyAdapter(private val ricksandmortys: List<Morty>): RecyclerView
             binding.inputSpecie.text = morty.mortySpecie
             binding.myImage.load(morty.mortyImage)
         }
-
     }
 }

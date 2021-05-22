@@ -30,7 +30,7 @@ class MainViewModel(private val repository: Repository): ViewModel() {
 
             try {
                 // Add the query here
-                _rickAndMortyLiveData.value =  repository.getRickAndMorty("page").mortyandrick
+                _rickAndMortyLiveData.value =  repository.getRickAndMorty("page").results
                 Log.d(TAG, "${_rickAndMortyLiveData.value}")
             } catch(e:Exception) {
                 Log.d(TAG, e.message.toString())

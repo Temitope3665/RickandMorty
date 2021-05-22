@@ -2,6 +2,7 @@ package com.temicode.rickandmorty
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.LinearLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(LayoutInflater.from(this))
         setContentView(binding?.root)
 
         viewModel.rickAndMortyLiveData.observe(this, Observer {
@@ -44,10 +45,14 @@ class MainActivity : AppCompatActivity() {
 
         setupBinding(binding!!)
 
+        //adapter.notifyDataSetChanged()
+
     }
 
     private fun setupBinding(binding: ActivityMainBinding) {
 
         binding.recyclerView.addItemDecoration(DividerItemDecoration(this, LinearLayout.VERTICAL))
+
     }
+
 }
