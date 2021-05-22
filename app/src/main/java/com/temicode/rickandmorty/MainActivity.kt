@@ -45,8 +45,6 @@ class MainActivity : AppCompatActivity() {
 
         setupBinding(binding!!)
 
-        //adapter.notifyDataSetChanged()
-
     }
 
     private fun setupBinding(binding: ActivityMainBinding) {
